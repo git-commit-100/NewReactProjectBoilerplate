@@ -1,9 +1,10 @@
+import Card from "./UI/Card";
 
 function App() {
   return (
-    <div className="App">
+    <Card className="App">
       <h2>Let's get started</h2>
-    </div>
+    </Card>
   );
 }
 
