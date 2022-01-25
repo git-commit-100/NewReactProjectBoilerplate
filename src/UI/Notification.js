@@ -2,6 +2,12 @@ import React, { useEffect, useCallback } from "react";
 import styles from "./Notification.module.css";
 
 function Notification(props) {
+  /* props must contain
+      heading
+      message
+      type
+      hideNotification => trigger hiding state in parent
+   */
   const { heading, message, type } = props;
   let notificationClasses = "";
 
@@ -20,7 +26,7 @@ function Notification(props) {
 
   useEffect(() => {
     const notificationTimer = setTimeout(() => {
-      closeNotification(); //HIDE SHOW NOTI IN PARENT COMPONENT
+      closeNotification();
     }, 6000);
 
     return () => {

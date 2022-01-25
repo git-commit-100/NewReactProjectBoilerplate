@@ -12,6 +12,7 @@ button.btn {
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  font-size: 1.25rem;
 }
 
 button.btn:hover {
