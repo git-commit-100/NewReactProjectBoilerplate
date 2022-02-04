@@ -37,15 +37,15 @@
 }
 
 .noti-default {
-  background-color: rgb(24, 90, 144);
+  background-color: hsl(207, 71%, 33%);
 }
 
 .noti-success {
-  background-color: rgb(24, 144, 98);
+  background-color: hsl(157, 71%, 33%);
 }
 
 .noti-error {
-  background-color: rgb(165, 53, 38);
+  background-color: hsl(7, 63%, 40%);
 }
 
 h3.noti-header {

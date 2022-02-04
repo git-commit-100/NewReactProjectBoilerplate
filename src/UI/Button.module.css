@@ -1,14 +1,10 @@
-:root {
-  --color: teal;
-}
-
 button.btn {
   cursor: pointer;
   padding: 0.5rem 2.5rem;
   border-radius: 4px;
   background-color: transparent;
-  color: var(--color);
-  border: 1px solid var(--color);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -16,7 +12,7 @@ button.btn {
 }
 
 button.btn:hover {
-  background-color: var(--color);
+  background-color: var(--primary);
   color: white;
 }
 
