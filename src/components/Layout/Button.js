@@ -1,8 +1,6 @@
-import React from "react";
 import styles from "./Button.module.css";
 
-function Button(props) {
-  const { type, className, onClick, disabled } = props;
+function Button({ type, className, onClick, disabled, children }) {
   return (
     <button
       type={type ? type : "button"}
@@ -10,7 +8,7 @@ function Button(props) {
       onClick={onClick}
       disabled={disabled}
     >
-      {props.children}
+      {children}
     </button>
   );
 }

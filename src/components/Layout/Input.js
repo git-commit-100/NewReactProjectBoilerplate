@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./Input.module.css";
 
-function Input(props) {
+function Input({ label, error, inputConfig, whenError }) {
   /* hooks must be used in parent component 
      props must have
         label
@@ -11,11 +10,9 @@ function Input(props) {
     */
   return (
     <section className={styles["input-section"]}>
-      <label className={styles["input-label"]}>{props.label}</label>
-      <input {...props.inputConfig} />
-      {props.whenError && (
-        <p className={styles["input-error"]}>{props.error}</p>
-      )}
+      <label className={styles["input-label"]}>{label}</label>
+      <input {...inputConfig} />
+      {whenError && <p className={styles["input-error"]}>{error}</p>}
     </section>
   );
 }
